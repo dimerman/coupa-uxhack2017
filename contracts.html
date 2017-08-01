@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3000/contracts -->
+<html id="ng-app" lang="en" ng-app="contractually" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Coupa Contract Collaboration</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="5iyw6KSmhMo+k5lxHiqJeVQd/6Vxtf/HXqzZ+9kqFIGAzz+XAUWPQqJP81t6DpCz04HaRT69spn5I6icUEzjyA==">
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="/assets/polyfills/ie8-961c6445470745534ad43231abb01e924c5a9e8779dc4fee0d0efc9d87527838.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="./contracts_files/application-905937589318bfd2453a304a5d1a0ec7b67118e41635e901e00dc846d35624dd.css">
+
+<!--[if IE 8]><style>.hide-ie8 { display:none !important; }</style><![endif]-->
+
+<style>
+  .fa-question-circle { display: none !important; }
+</style>
+<script>
+  window.RAILS_ENV = "development";
+</script>
+
+<style>.cke{visibility:hidden;}</style></head>
+<body class="" style="">
+<script>
+//<![CDATA[
+
+        (function() {
+
+          if(window._contractuallyJSON === undefined) {
+            window._contractuallyJSON = {};
+          }
+          window._contractuallyJSON.serialized_feature_flags = {"standalone":false,"create_contract_button":true,"save_share_improvements":false,"default_to_supplier_on_external_invite":true,"accept_reject_changes":true,"r19_private_comments":true};
+
+        })();
+      
+//]]>
+</script>
+<style>
+  #fields-panel { top: 170px; }
+</style>
+<div class="header-coupa">
+<div class="navbar navbar-top">
+<div class="navbar-inner">
+<div class="container-fluid">
+<a class="brand" href="https://clm-test.coupadev.com/"><img alt="Coupa Contract Collaboration" src="./contracts_files/poopfish.png"></a>
+<div class="pull-right">
+<ul class="nav">
+<li>
+<form class="navbar-search ng-pristine ng-valid" action="http://localhost:3000/contracts" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<input type="text" name="q" id="q" class="search-query text-padding-icon">
+<span class="in-textbox">
+<i class="fa fa-search"></i>
+</span>
+</form>
+
+</li>
+<li class="my-gravatar dropdown" id="organization-dropdown">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0)" id="header-menu">
+<span id="current-organization-name">Organization</span>
+<span class="fa fa-chevron-down"></span>
+</a>
+<ul aria-labelledby="organizationMenu" class="dropdown-menu pull-right dropdown-highlighted-on-top" role="menu">
+<li class="highlighted">
+<a class="current-organization" href="http://localhost:3000/contracts#" tabindex="-1">
+<span class="fa fa-check"></span>
+Organization
+</a>
+</li>
+<li class="divider"></li>
+<li>
+<a href="http://localhost:3000/admin" tabindex="-1">
+<span class="fa fa-glass"></span>
+Coupa Support
+</a>
+</li>
+<li>
+<a href="http://localhost:3000/users/user_settings" tabindex="-1">
+<span class="fa fa-user"></span>
+Profile
+</a>
+</li>
+<li>
+<a href="http://localhost:3000/organizations/2/organization_settings" tabindex="-1">
+<span class="fa fa-cog"></span>
+Organization
+</a>
+</li>
+<li>
+<a href="http://localhost:3000/logout" tabindex="-1">
+<span class="fa fa-power-off"></span>
+Log Out
+</a>
+</li>
+</ul>
+
+</li>
+<li class="help-divider"></li>
+<li class="dropdown" id="help-dropdown">
+<a class="dropdown-toggle help" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0)">
+HELP
+</a>
+<ul class="dropdown-menu pull-right dropdown-highlighted-on-top" role="menu">
+<li>
+<a target="_blank" href="https://clm-test.coupadev.com/help/auth_link">Coupa Help</a>
+</li>
+<li>
+<a href="https://clm-test.coupadev.com/ask">Ask an Expert</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="navbar navbar-bottom">
+<div class="navbar-inner">
+<div class="container-fluid">
+<ul class="nav links">
+<li class="">
+<a href="http://localhost:3000/contracts/dashboard">Dashboard</a>
+</li>
+<li class="active">
+<a href="http://localhost:3000/contracts">Contracts</a>
+</li>
+<li class="">
+<a href="http://localhost:3000/templates">Templates</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="content-full" id="content">
+
+<script>
+//<![CDATA[
+
+        (function() {
+
+          if(window._contractuallyJSON === undefined) {
+            window._contractuallyJSON = {};
+          }
+          window._contractuallyJSON.serialized_filters = [];
+
+        })();
+      
+//]]>
+</script>
+<div ng-controller="ContractsIndexCtrl" class="ng-scope">
+<div alerts="alerts" class="ng-isolate-scope"><!-- ngRepeat: alert in alerts.alerts --></div>
+<div class="row-fluid">
+<div class="span8">
+<div class="header-with-info">
+<h1>Contracts</h1>
+<h2>Search and filter contracts.</h2>
+</div>
+</div>
+<div class="span4 text-right">
+<a class="btn btn-primary" id="new-contract-button" href="http://localhost:3000/templates/select">Create Contract</a>
+
+</div>
+</div>
+<div class="filters">
+<div class="row-fluid">
+<div class="span10">
+<div class="filter-row filter-tag-row ng-hide" ng-show="(currentFilterSet.filters | doesNotMatch:&#39;my_contracts&#39;:&#39;criteria_type&#39;).length">
+<!-- ngRepeat: condition in (currentFilterSet.filters | doesNotMatch:'my_contracts':'criteria_type') -->
+<a class="btn btn-danger btn-clear ng-hide" ng-click="removeAllConditions()" ng-show="currentFilterSet.filters.length &gt; 1">
+Clear
+</a>
+<span bootstrap-dropdown="" class="save-filter ng-scope" filter-saver=""><span class="dropdown" ng-show="currentFilterSet.filters.length">
+<a class="btn btn-primary btn-save dropdown-toggle ng-binding" data-click="dropdown" data-toggle="dropdown" href="javascript:void(0)">
+Save
+</a>
+<ul class="dropdown-menu" id="save-filter-ui" role="menu">
+<li class="no-link">
+<form ng-submit="saveCurrent();" class="ng-pristine ng-invalid ng-invalid-required">
+<label class="ng-binding">
+Save current filter (1 conditions)
+</label>
+<input name="newFilterSetName" ng-model="newFilterSet.name" ng-required="true" placeholder="Filter name" type="text" class="ng-pristine ng-invalid ng-invalid-required" required="required">
+<button class="btn btn-primary btn-small ng-binding" type="submit">Save</button>
+<label class="ng-binding">
+<input class="alert ng-pristine ng-valid" ng-model="newFilterSet.alert" type="checkbox">
+Alert me when new contracts match this filter
+</label>
+</form>
+</li>
+</ul>
+</span></span>
+</div>
+<div class="search-row">
+<div class="filter-cell">
+<span ng-show="loadingTracker.active()" class="ng-hide">
+<img alt="Loading..." class="ajax-loader" src="./contracts_files/ajax-loader-white-43a526a07a078d736e5c9d67d8479dd54072b7e5c6ddd2cd466f86a086e49ef5.gif">
+</span>
+<span ng-show="!loadingTracker.active()" class="">
+<i class="fa fa-search"></i>
+</span>
+<span action="add" add-condition="addCondition(condition)" class="pull-left text-search ng-isolate-scope" placeholder="Title or party contains" text-search=""><form ng-submit="submit()" class="ng-pristine ng-valid">
+<input class="contracts-search-text text-padding-icon ng-pristine ng-valid" id="contracts-search-text" ng-model="searchString" placeholder="Title or party contains" type="text">
+<button class="btn btn-primary btn-small ng-hide" ng-show="action == &#39;edit&#39;" type="submit">
+Apply
+</button>
+</form></span>
+</div>
+<div class="my-contracts-filter ng-isolate-scope" get-singleton-condition="getSingletonCondition(type)" my-contracts-filter="" ontoggle="loadContracts" update-singleton-condition="updateSingletonCondition(type,condition)"><div class="my-contracts highlight" ng-click="toggle()">
+<input name="my-contracts" ng-checked="condition.value" type="checkbox">
+<label class="ng-binding">My contracts only</label>
+<a class="icon-top-right" href="http://support.contractual.ly/article/204-how-do-i-filter-the-contracts-list-to-show-my-contracts" target="_blank">
+<span class="fa fa-question-circle"></span>
+</a>
+</div></div>
+</div>
+</div>
+<div class="span2">
+<div bootstrap-dropdown="" class="filter-list pull-right ng-scope ng-hide" filter-chooser="" ng-show="savedFilterSets.length"><span class="dropdown ng-hide" ng-show="savedFilterSets.length">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0)">
+<span class="ng-binding">Saved filters</span>
+<span class="fa fa-chevron-down"></span>
+</a>
+<ul class="dropdown-menu pull-right" id="saved-filter-list" role="menu">
+<!-- ngRepeat: filterSet in savedFilterSets | orderBy:'name' -->
+</ul>
+</span></div>
+</div>
+</div>
+<div class="filter-row-seperator"></div>
+<div class="row-fluid no-space filter-row">
+<div class="span6 no-space filter-cell filter">
+<span class="dropdown">
+<a class="dropdown-toggle" data-click="dropdown" data-toggle="dropdown" href="javascript:void(0)">
+Field
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu dropdown-ui">
+<div action="add" add-condition="addCondition(condition)" field-filter="" class="ng-isolate-scope"><form ng-submit="submit()" class="ng-pristine ng-valid">
+<li>
+<label for="fieldName" class="ng-binding">Field Name</label>
+<div class="full-width-wrapper typeahead-wrapper">
+<input autocomplete="off" class="full-width ng-pristine ng-valid" id="fieldName" name="fieldName" ng-model="field" type="text" typeahead-loading="isLoading" typeahead-no-results="noResults" typeahead-template-url="contract_search/filters/field_filter_list_item.html" typeahead-wait-ms="400" typeahead="field as field.name for field in getContractFields($viewValue)| matches:$viewValue:&#39;name&#39; | orderBy:&#39;name&#39; | add_numeric_indexes"><ul class="typeahead dropdown-menu ng-isolate-scope" ng-style="{display: isOpen()&amp;&amp;&#39;block&#39; || &#39;none&#39;, top: position.top+&#39;px&#39;, left: position.left+&#39;px&#39;}" matches="matches" active="activeIdx" select="select(activeIdx)" query="query" position="position" template-url="contract_search/filters/field_filter_list_item.html" style="display: none;">
+    <!-- ngRepeat: match in matches -->
+</ul>
+<div class="loading ng-hide" ng-show="!!isLoading">
+<img alt="Loading..." class="ajax-loader" src="./contracts_files/ajax-loader-white-43a526a07a078d736e5c9d67d8479dd54072b7e5c6ddd2cd466f86a086e49ef5.gif">
+<small class="ng-binding">Searching...</small>
+
+</div>
+<div class="no-results ng-hide" ng-show="!!noResults">
+<small class="ng-binding">No Results</small>
+</div>
+</div>
+</li>
+<div class="extra-spacing" ng-switch="field.type_name">
+<!-- ngSwitchWhen: text -->
+<!-- ngSwitchWhen: date -->
+<!-- ngSwitchWhen: number -->
+<!-- ngSwitchWhen: currency -->
+<!-- ngSwitchWhen: checkbox -->
+<!-- ngSwitchWhen: dropdown -->
+</div>
+<div ng-show="isValid" class="ng-hide">
+<button class="btn btn-primary btn-small" type="submit">
+<span ng-show="action == &#39;add&#39;" class="ng-binding">Add</span>
+<span ng-show="action == &#39;edit&#39;" class="ng-binding ng-hide">Apply</span>
+</button>
+</div>
+</form></div>
+</ul>
+</span>
+</div>
+<div class="span6 no-space filter-cell filter" id="filter-state">
+<span class="dropdown">
+<a class="dropdown-toggle" data-click="dropdown" data-toggle="dropdown" href="javascript:void(0)">
+Status
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<div action="add" criteria-type="state" get-singleton-condition="getSingletonCondition(type)" multi-select-filter="" options="states" update-singleton-condition="updateSingletonCondition(type,condition)" class="ng-isolate-scope"><div class="multi-select">
+<!-- ngRepeat: option in options --><li ng-repeat="option in options" class="ng-scope">
+<a href="javascript:void(0)" ng-click="toggleOption(option)">
+<span class="ng-binding">
+Open
+<div class="fa fa-check ng-hide" ng-show="option.selected"></div>
+</span>
+</a>
+</li><!-- end ngRepeat: option in options --><li ng-repeat="option in options" class="ng-scope">
+<a href="javascript:void(0)" ng-click="toggleOption(option)">
+<span class="ng-binding">
+Signing
+<div class="fa fa-check ng-hide" ng-show="option.selected"></div>
+</span>
+</a>
+</li><!-- end ngRepeat: option in options --><li ng-repeat="option in options" class="ng-scope">
+<a href="javascript:void(0)" ng-click="toggleOption(option)">
+<span class="ng-binding">
+Completed
+<div class="fa fa-check ng-hide" ng-show="option.selected"></div>
+</span>
+</a>
+</li><!-- end ngRepeat: option in options --><li ng-repeat="option in options" class="ng-scope">
+<a href="javascript:void(0)" ng-click="toggleOption(option)">
+<span class="ng-binding">
+Canceled
+<div class="fa fa-check ng-hide" ng-show="option.selected"></div>
+</span>
+</a>
+</li><!-- end ngRepeat: option in options -->
+</div></div>
+</ul>
+</span>
+</div>
+</div>
+</div>
+<div class="table-prelude" ng-show="!loadingTracker.active() &amp;&amp; currentFilterSet.filters.length &gt; 0">
+<span class="pull-right ng-binding">
+90 matching
+<span count="totalEntries" ng-pluralize="" when="{1: &#39;contract.&#39;, &#39;other&#39;: &#39;contracts.&#39;}">contracts.</span>
+<a href="javascript:void(0)" ng-click="exportContracts()" ng-show="contracts.length &gt; 0" class="">
+Export...
+</a>
+</span>
+</div>
+<div class="table-prelude ng-hide" ng-show="!loadingTracker.active() &amp;&amp; currentFilterSet.filters.length === 0">
+<span class="pull-right">
+<a href="javascript:void(0)" ng-click="exportContracts()" ng-show="contracts.length &gt; 0" class="">
+Export...
+</a>
+</span>
+</div>
+<table class="table table-bordered table-no-vertical-border table-detailed table-hover" id="contract-list">
+<thead>
+<tr>
+<th>Contracts</th>
+<th>Last Worked On</th>
+<th>Status</th>
+<!-- ngRepeat: field in fieldCols -->
+<th class="hover-icons"></th>
+</tr>
+</thead>
+<tbody infinite-scroll-disabled="loadingTracker.active()" infinite-scroll-distance="0.5" infinite-scroll="loadMoreContracts()">
+<!-- ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc87/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc87/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Blank Template
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc86/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc86/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Blank Template
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc85/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc85/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Blank Template
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc84/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc84/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, July 28, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc83/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc83/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, July 28, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc82/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc82/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Wednesday, July 26, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc81/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc81/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc80/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc80/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7z/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7z/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7y/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7y/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7q/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7q/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, July 21, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7x/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7x/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Thursday, July 20, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed --><span ng-switch-when="completed" class="ng-scope">
+Completed
+</span>
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  -->
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7w/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7w/edit" class="ng-hide">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Tuesday, July 18, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7v/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7v/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Tuesday, July 18, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7u/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7u/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Meat Template
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7t/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7t/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7r/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7r/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7s/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7s/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Tuesday, July 11, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7p/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7p/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Monday, July 10, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7m/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7m/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+All Companies - Execution Report Order # 1526154 Dan Dimerman
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, July 7, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7o/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7o/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Wednesday, July 5, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7n/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7n/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease - CD-85428
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Tuesday, July 4, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7l/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7l/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, June 30, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7h/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7h/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
+<td>
+<strong>
+Residential Lease
+</strong>
+<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
+</td>
+<td class="muted muted-normal-size ng-binding">Friday, June 30, 2017</td>
+<td class="muted muted-normal-size">
+<span ng-switch="" on="contract.state">
+<!-- ngSwitchWhen: completed -->
+<!-- ngSwitchWhen: canceled -->
+<!-- ngSwitchWhen: signed -->
+<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
+Open
+</span>
+</span>
+</td>
+<!-- ngRepeat: field in fieldCols -->
+<td class="hover-icons nolink">
+<a ng-href="/contracts/bsc7j/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7j/edit" class="">
+<span class="fa fa-pencil"></span>
+</a>
+</td>
+</tr><!-- end ngRepeat: contract in contracts -->
+<tr ng-hide="contracts.length || loadingTracker.active()" class="ng-hide">
+<td class="nolink" colspan="5">
+You don't have any contracts, or no contracts match your search.
+</td>
+</tr>
+<tr ng-show="loadingTracker.active()" class="ng-hide">
+<td class="nolink" colspan="5">
+<img alt="Loading..." class="ajax-loader" src="./contracts_files/ajax-loader-white-43a526a07a078d736e5c9d67d8479dd54072b7e5c6ddd2cd466f86a086e49ef5.gif">
+Loading contracts...
+</td>
+</tr>
+</tbody>
+</table>
+<a href="javascript:void(0)" ng-click="disableMyContractsFilter()" ng-show="myContractsFilterEnabled()" class="ng-hide">
+There may be matching contracts that are not shown because your filter is currently only showing My Contracts. Click here to search all contracts.
+</a>
+</div>
+
+</div>
+
+<script>
+  document.contractually = {};
+  var CKEDITOR_BASEPATH = '/assets/ckeditor/';
+</script>
+<script src="./contracts_files/application-eeded773d72816fb68c3769c1d3b7954d1bfb73f19bdd16393aed01ef2e5687c.js" crossorigin="true"></script>
+<script>
+  I18n.locale = "en";
+</script>
+<script>
+//<![CDATA[
+
+        (function() {
+
+          if(window._contractuallyJSON === undefined) {
+            window._contractuallyJSON = {};
+          }
+          window._contractuallyJSON.serialized_current_user = {"id":1,"name":"Org User","gravatar_hash":"9812be258f7b92cfa11496d3e0063c65","is_me":true,"org_admin":true};
+
+        })();
+      
+//]]>
+</script>
+<script>
+//<![CDATA[
+
+        (function() {
+
+          if(window._contractuallyJSON === undefined) {
+            window._contractuallyJSON = {};
+          }
+          window._contractuallyJSON.serialized_current_organization = {"id":2,"name":"Organization","coupa_app_url":"https://clm-test.coupadev.com","num_users":6,"coupa_enabled":true};
+
+        })();
+      
+//]]>
+</script>
+
+
+
+<div data-is-bullet-footer="" ondblclick="this.parentNode.removeChild(this);" style="position: fixed; bottom: 0pt; left: 0pt; cursor: pointer; border-style: solid; border-color: rgb(153, 153, 153);
+ -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none;
+ -moz-border-left-colors: none; -moz-border-image: none; border-width: 2pt 2pt 0px 0px;
+ padding: 3px 5px; border-radius: 0pt 10pt 0pt 0px; background: none repeat scroll 0% 0% rgba(200, 200, 200, 0.8);
+ color: rgb(119, 119, 119); font-size: 16px; font-family: &#39;Arial&#39;, sans-serif; z-index:9999;"><span onclick="this.parentNode.remove()" style="position:absolute; right: 10px; top: 0px; font-weight: bold; color: #333;">×</span>user: dan  USE eager loading detected    OrganizationAccess =&gt; [:user]
+  Add to your finder: :includes =&gt; [:user]</div>
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; height: 0px !important; min-height: 0px !important;"></textarea></body></html>

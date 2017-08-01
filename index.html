@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset=utf-8>
+	<title>Coverflow</title>
+	<link rel="stylesheet" href="coverflow/css/style.css">
+</head>
+
+<body>
+	<div id="coverflow">
+		<div class="covers">
+			<ul></ul>
+		</div>
+		<div class="ScrollBar"></div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="coverflow/js/coverflow.min.js"></script>
+<script>
+  function pad(num, size) {
+    var s = "000" + num;
+    return s.substr(s.length-size);
+  }
+
+	var $covers_list = $(".covers ul");
+	for ( var i = 0 ; i <=22 ; i++ ) {
+	  var filename = "tiles/tile" + pad(i, 3) + ".png";
+	  var $page = $("<li><div class='imgdiv'><img src='" + filename + "'></div></li>");
+	  $page.appendTo($covers_list);
+	}
+
+
+  $coverflow = $("#coverflow").coverflow({"path":"coverflow/"});
+	$coverflow.refreshRotations();
+
+</script>
+
+</body>
+</html>
