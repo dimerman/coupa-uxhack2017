@@ -12,7 +12,7 @@
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	outline: solid 0px;
+	outline: solid 0;
 }
 
 .covers {
@@ -165,7 +165,6 @@ li:nth-child(5) .imgdiv,
 	display: none;
 	width: 20px;
 	height: 20px;
-	background: ;
 	float: left;
 	border-radius: 10px;
 }
@@ -192,7 +191,7 @@ li:nth-child(5) .imgdiv,
 }
 
 .ScrollBar .tracker {
-	width: 0px;
+	width: 0;
 	height: 16px;
 	background: rgb(242, 242, 242);
 	margin: 2px;

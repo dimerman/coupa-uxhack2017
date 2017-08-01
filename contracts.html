@@ -154,7 +154,11 @@ HELP
 //]]>
 </script>
 <div ng-controller="ContractsIndexCtrl" class="ng-scope">
-<div alerts="alerts" class="ng-isolate-scope"><!-- ngRepeat: alert in alerts.alerts --></div>
+<div alerts="alerts" class="ng-isolate-scope">
+    <div class="alert alert-info">Welcome to the UX Hack 2017 - drag the scrollbar horizontally for awesome contract navigation.
+        scroll to the bottom of the page for <a href="#tech-details">technical details.</a>
+    </div>
+</div>
 
 
 
@@ -417,567 +421,7 @@ Open
 </td>
 </tr><!-- end ngRepeat: contract in contracts -->
 
-<tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Blank Template
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc85/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc85/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Blank Template
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 31, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc84/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc84/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, July 28, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc83/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc83/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, July 28, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc82/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc82/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Wednesday, July 26, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc81/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc81/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc80/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc80/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7z/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7z/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7y/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7y/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 24, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7q/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7q/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, July 21, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7x/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7x/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Thursday, July 20, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed --><span ng-switch-when="completed" class="ng-scope">
-Completed
-</span>
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  -->
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7w/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7w/edit" class="ng-hide">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Tuesday, July 18, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7v/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7v/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Tuesday, July 18, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7u/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7u/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Meat Template
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7t/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7t/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7r/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7r/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 17, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7s/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7s/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Tuesday, July 11, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7p/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7p/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Monday, July 10, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7m/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7m/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-All Companies - Execution Report Order # 1526154 Dan Dimerman
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, July 7, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7o/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7o/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Wednesday, July 5, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7n/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7n/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease - CD-85428
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Tuesday, July 4, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7l/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7l/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Alex Murphy and Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, June 30, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7h/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7h/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts --><tr ng-repeat="contract in contracts" row-link="" class="ng-scope rowlink">
-<td>
-<strong>
-Residential Lease
-</strong>
-<p class="muted ng-binding" ng-bind-html="contract.parties | to_sentence:&#39;legal_entity_name&#39; | highlight:highlightedPhrases">Organization</p>
-</td>
-<td class="muted muted-normal-size ng-binding">Friday, June 30, 2017</td>
-<td class="muted muted-normal-size">
-<span ng-switch="" on="contract.state">
-<!-- ngSwitchWhen: completed -->
-<!-- ngSwitchWhen: canceled -->
-<!-- ngSwitchWhen: signed -->
-<!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope">
-Open
-</span>
-</span>
-</td>
-<!-- ngRepeat: field in fieldCols -->
-<td class="hover-icons nolink">
-<a ng-href="/contracts/bsc7j/edit" ng-show="contract.editable" href="http://localhost:3000/contracts/bsc7j/edit" class="">
-<span class="fa fa-pencil"></span>
-</a>
-</td>
-</tr><!-- end ngRepeat: contract in contracts -->
 
-
-<tr ng-show="loadingTracker.active()" class="ng-hide">
-<td class="nolink" colspan="5">
-<img alt="Loading..." class="ajax-loader" src="./contracts_files/ajax-loader-white-43a526a07a078d736e5c9d67d8479dd54072b7e5c6ddd2cd466f86a086e49ef5.gif">
-Loading contracts...
-</td>
-</tr>
 </tbody>
 </table>
 <a href="javascript:void(0)" ng-click="disableMyContractsFilter()" ng-show="myContractsFilterEnabled()" class="ng-hide">
@@ -985,13 +429,46 @@ There may be matching contracts that are not shown because your filter is curren
 </a>
 </div>
 
+    <hr>
+    <a id="tech-details"></a>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <h1>Why?</h1>
+                <p>The use of paginated snapshot images of contracts can be used to help users leverate their image memory and
+                    accelerate navigation between and inside contracts </p>
+                <p>One use can be to display the first page of each accessible contract, and let the user choose a contract.</p>
+                <p>To drill down, once selected the user can browse the contract's pages and visually locate the place of interest.</p>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                <H1>How?</H1>
+                <ol>
+                    <li><pre><b>wkhtmltoimage</b> https://en.wikipedia.org/wiki/Vancouver vancouver.png</pre>
+                    <span>This is similar to our use of <b>wkhtmltopdf</b> but it dumps the result as image</span>
+                    </li>
+                    <li><pre>convert vancouver.png -crop 1024x1300 tiles/tile%03d.png</pre>
+                    <span>ImageMagick crops the long raw image into tiles. The width (1024) is set on step 1, so given the aspect ratio of
+                    the pages (e.g. letter) the height (1300) is derived. The pages (tiles) are saved in the tiles folder</span></li>
+                    <li>Plug the pages into a CoverFlow jquery plugin.</li>
+                    <li>???</li>
+                    <li>profit! - the whole process took <u>~2 seconds</u></li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
 </div>
+
+
+
 
 <script>
   document.contractually = {};
   var CKEDITOR_BASEPATH = '/assets/ckeditor/';
 </script>
-<!--<script src="./contracts_files/application-eeded773d72816fb68c3769c1d3b7954d1bfb73f19bdd16393aed01ef2e5687c.js" crossorigin="true"></script>-->
 <script>
   I18n.locale = "en";
 </script>
